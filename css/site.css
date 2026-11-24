@@ -220,3 +220,5 @@ section{padding:72px 0}
 footer{padding:28px 0 48px;color:var(--muted);font-size:13px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+.days span.bk{background:repeating-linear-gradient(135deg,#EEF1F2 0 6px,#E3E8EA 6px 12px);color:#8A979C;text-decoration:line-through;cursor:not-allowed}

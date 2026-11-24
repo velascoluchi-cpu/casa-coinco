@@ -5,7 +5,7 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Casa Coinco · Vitrina Sur (borrador para revisión)</title>
-<meta name="description" content="Casa de veraneo con acceso privado al lago Villarrica, sector Coinco. 4 dormitorios, hasta 8 huéspedes, quincho y 2 kayaks. Disponible del 4 al 28 de enero.">
+<meta name="description" content="Casa de veraneo con acceso privado al lago Villarrica, sector Coinco. 4 dormitorios, hasta 8 huéspedes, quincho y 2 kayaks. Disponible del 7 al 28 de enero.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -52,7 +52,7 @@
       </div>
       <figure>
         <img src="img/fachada.jpg" alt="Fachada de Casa Coinco con terraza cubierta y jardín" width="1059" height="966">
-        <div class="chip"><strong>$380.000 <small>por noche</small></strong><span>Disponible del 4 al 28 de enero de 2027</span></div>
+        <div class="chip"><strong>$380.000 <small>por noche</small></strong><span>Disponible del 7 al 28 de enero de 2027</span></div>
       </figure>
     </div>
   </div>
@@ -65,14 +65,14 @@
       </div>
       <div class="about">
         <div>
-          <p>Casa remodelada de 170 m² construidos sobre un terreno de 1.150 m². Living y comedor integrados con salida a la terraza, una segunda sala de estar con televisor para ver una película, cocina equipada con lavavajillas, logia con lavadora y secadora, y despensa. Recibe cómodamente grupos de hasta ocho personas.</p>
+          <p>Casa remodelada de 170 m² construidos sobre un terreno de 1.150 m². Living y comedor integrados con salida a la terraza, una segunda sala de estar con televisor para ver una película, cocina equipada con lavavajillas, y logia con lavadora, secadora y despensa. Recibe cómodamente grupos de hasta ocho personas.</p>
         </div>
         <div class="rooms">
           <div><strong>4 dormitorios</strong><span>El principal en suite, con vista al lago. Las piezas tienen camas de 1 plaza, que se pueden dejar como camas de 2 plazas.</span></div>
           <div><strong>3,5 baños</strong><span>Incluye el baño en suite del dormitorio principal.</span></div>
           <div><strong>Living y comedor</strong><span>Un solo espacio con salida a la terraza.</span></div>
           <div><strong>Sala de estar</strong><span>Con televisor, separada del comedor.</span></div>
-          <div><strong>Cocina y logia</strong><span>Lavavajillas, lavadora, secadora y despensa.</span></div>
+          <div><strong>Cocina y logia</strong><span>Cocina con lavavajillas. Logia con lavadora, secadora y despensa.</span></div>
         </div>
       </div>
       <div class="hl" style="margin-top:40px">
@@ -80,7 +80,7 @@
         <div><h3>Marina y 2 kayaks</h3><p>Muelle, embarcadero y zona para bañistas. Los 2 kayaks se pueden bajar a la playa.</p></div>
         <div><h3>Terraza cubierta</h3><p>Con vista al lago y a la cordillera, mesa para toda la familia.</p></div>
         <div><h3>Quincho con parrilla a carbón</h3><p>Con ventilador. Además, estacionamiento techado.</p></div>
-        <div><h3>Calefacción y leña</h3><p>Leñera con leña, bosca en la sala de estar, radiadores y estufa a gas en el comedor.</p></div>
+        <div><h3>Calefacción con estufa a combustión</h3><p>Estufa a leña bosca.</p></div>
         <div><h3>No se permiten mascotas</h3><p>La casa no admite mascotas.</p></div>
         <div><h3>Condominio seguro</h3><p>Portón eléctrico y cámaras.</p></div>
       </div>
@@ -113,7 +113,7 @@
     <div class="wrap">
       <div class="head">
         <p class="eyebrow">Tarifa y disponibilidad</p>
-        <h2>Enero en el lago, del 4 al 28</h2>
+        <h2>Enero en el lago, del 7 al 28</h2>
         <p>Elige tu llegada y tu salida en el calendario y calcula el valor de tu estadía. La estadía mínima es de una semana (7 noches). La última noche es la del 28; la salida puede ser el 29.</p>
       </div>
       <div class="rate">
@@ -122,7 +122,7 @@
           <p class="big">$380.000 <small>CLP</small></p>
           <p style="color:#9db7c0;font-size:15px">Casa completa, hasta 8 huéspedes. No se permiten mascotas.</p>
           <ul>
-            <li><b>Temporada:</b> noches del 4 al 28 de enero de 2027.</li>
+            <li><b>Temporada:</b> noches del 7 al 28 de enero de 2027.</li>
             <li><b>Estadía mínima:</b> 1 semana (7 noches).</li>
             <li><b>Mascotas:</b> no se permiten.</li>
             <li><b>Limpieza:</b> servicio adicional con costo, previa coordinación para confirmar disponibilidad.</li>
@@ -138,6 +138,7 @@
             <span><i style="background:var(--tq)"></i>Llegada y salida</span>
             <span><i style="background:#BDE6E8"></i>Noches</span>
             <span><i style="border:1.5px dashed var(--lake)"></i>Solo salida</span>
+            <span><i style="background:#E3E8EA"></i>Arrendada o no disponible</span>
           </div>
           <div class="sum" aria-live="polite">
             <p id="sumText"></p>
@@ -298,6 +299,9 @@
 <script>
 (function(){
   var CFG={phone:'56989209292',price:380000,first:4,last:28,year:2027,min:7};
+  /* Fechas NO disponibles (arrendadas o bloqueadas): [desde, hasta] por día de enero, ambos incluidos. Agregar rangos aquí. */
+  var BLOCKED=[[4,6]];
+  function isBlocked(d){return BLOCKED.some(function(r){return d>=r[0]&&d<=r[1];});}
   var MES='enero', DOW=['lun','mar','mié','jue','vie','sáb','dom'];
   function clp(n){return '$'+String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
   function wa(text){return 'https://wa.me/'+CFG.phone+'?text='+encodeURIComponent(text);}
@@ -329,11 +333,11 @@
 
   /* ---- Entrega de la casa: completar los valores; lo vacío aparece como "Se informa al confirmar". ---- */
   var ENTREGA=[
-    ['Llegada (check-in)','A las 15:00 hrs. La primera llegada posible es el 4 de enero.'],
+    ['Llegada (check-in)','A las 15:00 hrs. La primera llegada posible es el 7 de enero.'],
     ['Salida (check-out)','A las 11:00 hrs. Con la última noche del 28, la salida más tardía es el 29 de enero.'],
     ['Cómo llegar y acceso al condominio','Las llaves se entregan previa reunión con el propietario o con personal de Vitrina Sur.'],
     ['Estacionamiento','Para 4 vehículos, al interior del condominio.'],
-    ['Leña y calefacción','Leña y calefacción disponibles para los días de lluvia.'],
+    ['Calefacción','Estufa a leña bosca.'],
     ['Kayaks y acceso al lago','2 kayaks, guardados en la misma casa, que se pueden bajar en vehículo hasta la playa.'],
     ['Quincho y parrilla','Quincho con parrilla a carbón y ventilador.'],
     ['Basura y reciclaje','Retiro en la propiedad los lunes, miércoles y viernes.'],
@@ -436,7 +440,7 @@
 
   /* ---- Calendario: noches del 4 al 28; el 29 solo como día de salida ---- */
   var days=document.getElementById('days');
-  var start=null,end=null,DEP=CFG.last+1,tooShort=false;
+  var start=null,end=null,DEP=CFG.last+1,notice='';
   var firstIdx=(new Date(CFG.year,0,1).getDay()+6)%7;
   var total=new Date(CFG.year,1,0).getDate();
   function dowOf(d){return DOW[(new Date(CFG.year,0,d).getDay()+6)%7];}
@@ -445,6 +449,7 @@
     for(var b=0;b<firstIdx;b++){days.appendChild(document.createElement('span'));}
     for(var d=1;d<=total;d++){
       if(d<CFG.first||d>DEP){var s=document.createElement('span');s.textContent=d;days.appendChild(s);continue;}
+      if(isBlocked(d)){var bk=document.createElement('span');bk.className='bk';bk.textContent=d;bk.setAttribute('aria-label',dowOf(d)+' '+d+' de '+MES+', arrendada o no disponible');days.appendChild(bk);continue;}
       var btn=document.createElement('button');btn.type='button';btn.textContent=d;
       btn.setAttribute('aria-label',dowOf(d)+' '+d+' de '+MES+(d===DEP?' (solo salida)':''));
       if(d===start||d===end)btn.className='ed';
@@ -455,8 +460,11 @@
     }
   }
   function pick(d){
-    tooShort=false;
-    if(start!==null&&end===null&&d>start&&d-start<CFG.min){tooShort=true;renderDays();summary();return;}
+    notice='';
+    if(start!==null&&end===null&&d>start){
+      for(var k=start;k<d;k++){if(isBlocked(k)){notice='Ese rango incluye fechas no disponibles.';renderDays();summary();return;}}
+      if(d-start<CFG.min){notice='El arriendo es de mínimo 1 semana (7 noches).';renderDays();summary();return;}
+    }
     if(start===null||end!==null){
       if(d===DEP){return;}
       start=d;end=null;
@@ -473,7 +481,7 @@
       var msg='Hola Vitrina Sur, me interesa Casa Coinco (arriendos vacacionales). Quiero arrendarla desde el '+start+' al '+end+' de enero de '+CFG.year+' ('+n+(n===1?' noche':' noches')+', valor referencial '+clp(v)+'). ¿Está disponible?';
       btn.href=wa(msg);btn.target='_blank';btn.rel='noopener';
     }else if(start){
-      t.textContent=(tooShort?'El arriendo es de mínimo 1 semana (7 noches). ':'')+'Llegada el '+dowOf(start)+' '+start+' de '+MES+'. Elige una salida desde el '+(start+CFG.min)+'.';
+      t.textContent=(notice?notice+' ':'')+'Llegada el '+dowOf(start)+' '+start+' de '+MES+'. Elige una salida desde el '+(start+CFG.min)+'.';
       tot.textContent='';
     }else{
       t.textContent='Elige el día de llegada. La estadía mínima es de 7 noches, que equivalen a '+clp(7*CFG.price)+'.';
