@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa Coinco · Vitrina Sur (borrador para revisión)</title>
+<meta name="description" content="Casa de veraneo con acceso privado al lago Villarrica, sector Coinco. 4 dormitorios, hasta 8 huéspedes, grupo electrógeno, quincho y 2 kayaks. Disponible del 4 al 28 de enero.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#inicio">
+      <svg viewBox="-70 -70 140 140" role="img" aria-label="Vitrina Sur"><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M-56 -44 L-18 0 L-56 44" stroke="#262626" stroke-width="12"/><path d="M56 -44 L18 0 L56 44" stroke="#262626" stroke-width="12"/><path d="M0 -62 V62" stroke="#4A7280" stroke-width="6"/></g></svg>
+      <span>Casa Coinco<small>Vitrina Sur · Arriendos</small></span>
+    </a>
+    <ul>
+      <li><a href="#casa">La casa</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li id="navPlano" hidden><a href="#plano">Plano</a></li>
+      <li><a href="#tarifa">Tarifa</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#molco">Molco</a></li>
+      <li><a href="#entrega">Entrega</a></li>
+    </ul>
+    <a class="btn sm wa" href="#contacto">Consultar</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Arriendo de temporada · Sector Coinco</p>
+        <h1>Casa <span>Coinco</span></h1>
+        <p class="lead">Un refugio para compartir entre bosque, lago y volcán, con acceso privado a la orilla, muelle y dos kayaks.</p>
+        <div class="facts">
+          <div><strong>170 m²</strong><span>construidos</span></div>
+          <div><strong>1.150 m²</strong><span>de terreno</span></div>
+          <div><strong>4</strong><span>dormitorios</span></div>
+          <div><strong>8</strong><span>huéspedes</span></div>
+        </div>
+        <div class="cta">
+          <a class="btn wa" href="#contacto">Consultar disponibilidad</a>
+          <a class="btn ghost" href="#galeria">Ver galería</a>
+        </div>
+      </div>
+      <figure>
+        <img src="img/fachada.jpg" alt="Fachada de Casa Coinco con terraza cubierta y jardín" width="1059" height="966">
+        <div class="chip"><strong>$380.000 <small>por noche</small></strong><span>Disponible del 4 al 28 de enero de 2027</span></div>
+      </figure>
+    </div>
+  </div>
+
+  <section class="band" id="casa">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">La casa</p>
+        <h2>Espacios amplios, pensados para familias</h2>
+      </div>
+      <div class="about">
+        <div>
+          <p>Casa remodelada de 170 m² construidos sobre un terreno de 1.150 m². Living y comedor integrados con salida a la terraza, una segunda sala de estar con televisor para ver una película, cocina equipada con lavavajillas, logia con lavadora y secadora, y despensa. Recibe cómodamente grupos de hasta ocho personas.</p>
+        </div>
+        <div class="rooms">
+          <div><strong>4 dormitorios</strong><span>El principal en suite, con vista al lago. Las piezas tienen camas de 1½ plaza, que se pueden dejar como camas de 2 plazas.</span></div>
+          <div><strong>Living y comedor</strong><span>Un solo espacio con salida a la terraza.</span></div>
+          <div><strong>Sala de estar</strong><span>Con televisor, separada del comedor.</span></div>
+          <div><strong>Cocina y logia</strong><span>Lavavajillas, lavadora, secadora y despensa.</span></div>
+        </div>
+      </div>
+      <div class="hl" style="margin-top:40px">
+        <div><h3>Acceso privado al lago</h3><p>Paso subterráneo del condominio con reja y clave hasta la orilla.</p></div>
+        <div><h3>Marina y 2 kayaks</h3><p>Muelle, embarcadero y zona para bañistas. Los 2 kayaks se pueden bajar a la playa.</p></div>
+        <div><h3>Terraza cubierta</h3><p>Con vista al lago y a la cordillera, mesa para toda la familia.</p></div>
+        <div><h3>Quincho con parrilla a gas</h3><p>Además, parrilla a carbón y estacionamiento techado.</p></div>
+        <div><h3>Respaldo ante cortes de luz</h3><p>La casa cuenta con grupo electrógeno.</p></div>
+        <div><h3>Calefacción y leña</h3><p>Leñera con leña, bosca en la sala de estar, radiadores y estufa a gas en el comedor.</p></div>
+        <div><h3>Condominio seguro</h3><p>Portón eléctrico y cámaras.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Galería</p>
+        <h2>Conoce cada ambiente</h2>
+        <p>Toca una fotografía para verla en grande.</p>
+      </div>
+      <div class="filters" id="filters" role="group" aria-label="Filtrar fotografías"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section class="band" id="plano" hidden>
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Plano</p>
+        <h2>Distribución de la casa</h2>
+      </div>
+      <div class="plans" id="plans"></div>
+    </div>
+  </section>
+
+  <section id="tarifa">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Tarifa y disponibilidad</p>
+        <h2>Enero en el lago, del 4 al 28</h2>
+        <p>Elige tu llegada y tu salida en el calendario y calcula el valor de tu estadía. La estadía mínima es de una semana (7 noches). La última noche es la del 28; la salida puede ser el 29.</p>
+      </div>
+      <div class="rate">
+        <div class="price">
+          <p class="eyebrow">Valor por noche</p>
+          <p class="big">$380.000 <small>CLP</small></p>
+          <p style="color:#9db7c0;font-size:15px">Casa completa, hasta 8 huéspedes.</p>
+          <ul>
+            <li><b>Temporada:</b> noches del 4 al 28 de enero de 2027.</li>
+            <li><b>Estadía mínima:</b> 1 semana (7 noches).</li>
+            <li><b>Limpieza:</b> servicio adicional con costo, previa coordinación para confirmar disponibilidad.</li>
+            <li><b>Reserva y trámites:</b> todo el arriendo se gestiona directamente con el propietario de la casa. Vitrina Sur coordina disponibilidad y fechas, y te pone en contacto con él.</li>
+          </ul>
+        </div>
+        <div class="cal">
+          <h3>Enero 2027 <span>Días disponibles en celeste</span></h3>
+          <div class="dow" aria-hidden="true"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+          <div class="days" id="days"></div>
+          <div class="legend">
+            <span><i style="background:var(--mist)"></i>Disponible</span>
+            <span><i style="background:var(--tq)"></i>Llegada y salida</span>
+            <span><i style="background:#BDE6E8"></i>Noches</span>
+            <span><i style="border:1.5px dashed var(--lake)"></i>Solo salida</span>
+          </div>
+          <div class="sum" aria-live="polite">
+            <p id="sumText"></p>
+            <strong id="sumTotal"></strong>
+            <a class="btn" id="sumBtn" href="#contacto">Consultar por estas fechas</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="ubicacion">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Plano de ubicación</p>
+        <h2>A mitad de camino entre Villarrica y Pucón</h2>
+        <p>Sector Coinco, a 2 km de Molco en dirección a Pucón, sobre el camino Villarrica–Pucón (Ruta CH-199).</p>
+      </div>
+      <div class="loc">
+        <div class="map">
+          <svg viewBox="0 0 800 420" role="img" aria-labelledby="mapT mapD">
+            <title id="mapT">Esquema de ubicación de Casa Coinco</title>
+            <desc id="mapD">Casa Coinco queda entre Villarrica y Pucón, a 2 kilómetros de Molco, a unos 12 kilómetros de cada ciudad, con acceso al lago por un paso subterráneo.</desc>
+            <rect width="800" height="420" rx="16" fill="#EEF3F2"/>
+            <path d="M0 0H800V150C720 178 640 120 560 140C470 163 390 205 300 188C210 171 120 120 0 150Z" fill="#CFE3E6"/>
+            <text x="400" y="70" text-anchor="middle" font-size="15" fill="#4A7280" letter-spacing="3">LAGO VILLARRICA</text>
+            <path d="M40 250C200 232 300 262 420 248C540 234 640 262 760 244" fill="none" stroke="#4A7280" stroke-width="7" stroke-linecap="round"/>
+            <text x="420" y="296" text-anchor="middle" font-size="14" fill="#51656E" letter-spacing="1">CAMINO VILLARRICA–PUCÓN · RUTA CH-199</text>
+            <path d="M486 247V176" stroke="#006F76" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+            <text x="498" y="206" font-size="14" fill="#006F76">Paso subterráneo privado al lago</text>
+            <path d="M700 330L742 262L784 330Z" fill="#DDE6E8"/><path d="M730 285L742 262L754 285Z" fill="#fff"/>
+            <text x="742" y="352" text-anchor="middle" font-size="14" fill="#51656E">Volcán Villarrica</text>
+            <circle cx="62" cy="246" r="9" fill="#12262E"/>
+            <text x="62" y="224" text-anchor="middle" font-size="15" font-weight="700" fill="#12262E">Villarrica</text>
+            <text x="62" y="272" text-anchor="middle" font-size="14" fill="#51656E">≈ 12 km</text>
+            <circle cx="372" cy="251" r="6" fill="#51656E"/>
+            <text x="372" y="230" text-anchor="middle" font-size="15" fill="#51656E">Molco</text>
+            <text x="372" y="276" text-anchor="middle" font-size="14" fill="#51656E">2 km</text>
+            <circle cx="738" cy="246" r="9" fill="#12262E"/>
+            <text x="738" y="224" text-anchor="middle" font-size="15" font-weight="700" fill="#12262E">Pucón</text>
+            <text x="738" y="272" text-anchor="middle" font-size="14" fill="#51656E">≈ 12 km</text>
+            <circle cx="486" cy="248" r="14" fill="#00C2C7"/><circle cx="486" cy="248" r="5" fill="#021019"/>
+            <rect x="436" y="318" width="100" height="30" rx="15" fill="#07151B"/>
+            <text x="486" y="338" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Casa Coinco</text>
+            <text x="30" y="404" font-size="13" fill="#51656E">Esquema referencial, no a escala. Distancias aproximadas por ruta.</text>
+          </svg>
+        </div>
+        <aside>
+          <p>Este plano es referencial y no indica la dirección exacta. El propietario entrega la dirección y las indicaciones de acceso al condominio cuando acuerdas el arriendo con él.</p>
+          <div class="note">Dirección exacta y acceso: los entrega el propietario al confirmar el arriendo.</div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="molco">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Cerca de la casa · Sector Molco</p>
+        <h2>Locales a pocos minutos</h2>
+        <p>Comercio y servicios del sector, a unos 2 km de la casa. Horarios y disponibilidad cambian en verano: confirma antes de ir.</p>
+      </div>
+      <div class="cards" id="locales"></div>
+      <p class="src" id="localesNote"></p>
+    </div>
+  </section>
+
+  <section class="band" id="entorno">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Entorno</p>
+        <h2>La Araucanía a pocos minutos</h2>
+        <p>Elige actividades según la temporada y el nivel de tu grupo.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Parques nacionales</h3>
+          <ul>
+            <li><b>Villarrica:</b> volcán, bosque nativo y senderos de distintos niveles.</li>
+            <li><b>Huerquehue:</b> bosques, lagunas y rutas de montaña.</li>
+          </ul>
+          <p class="small">Las entradas se compran antes en <a href="https://www.pasesparques.cl" target="_blank" rel="noopener">pasesparques.cl</a>. Los sectores habilitados y los horarios cambian por temporada y clima: confirma antes de ir.</p>
+        </div>
+        <div class="card">
+          <h3>Turismo aventura</h3>
+          <ul>
+            <li><b>Río Trancura:</b> rafting y hydrospeed.</li>
+            <li><b>Montaña:</b> ascenso guiado al volcán Villarrica.</li>
+            <li><b>Bosque y quebradas:</b> canopy y canyoning.</li>
+            <li><b>A caballo o en bici:</b> cabalgatas y mountain bike.</li>
+          </ul>
+          <p class="small">Confirma requisitos, equipo y condiciones climáticas con cada operador.</p>
+        </div>
+        <div class="card">
+          <h3>Paseos sin entrada</h3>
+          <ul>
+            <li><b>Pucón:</b> Plaza de Armas, La Poza y Playa Grande.</li>
+            <li><b>Villarrica:</b> costanera y Playa Pucará.</li>
+            <li><b>Alrededores:</b> miradores y caminos escénicos.</li>
+          </ul>
+          <p class="small">Estacionamientos, consumos y actividades guiadas pueden tener cobro. Respeta la señalética y la propiedad privada.</p>
+        </div>
+        <div class="card">
+          <h3>Servicios en las ciudades</h3>
+          <ul>
+            <li>Supermercados, restaurantes, farmacias y cajeros en Pucón y Villarrica.</li>
+            <li>Urgencia 24 h en el Hospital Clínico San Francisco de Pucón.</li>
+          </ul>
+          <p class="small">Revisa los horarios de comercios y trámites antes de salir.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entrega">
+    <div class="wrap">
+      <div class="head">
+        <p class="eyebrow">Entrega de la casa</p>
+        <h2>Datos útiles para tu llegada</h2>
+        <p>Esta información se entrega al confirmar tu reserva con el propietario. Aquí queda el resumen de los datos de la casa.</p>
+      </div>
+      <dl class="deliver deliver-wrap" id="deliver"></dl>
+    </div>
+  </section>
+
+  <section id="contacto" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact">
+        <div>
+          <p class="eyebrow">Contacto de reservas</p>
+          <h2>Consulta tus fechas de enero</h2>
+          <p>Escríbenos por WhatsApp con tus fechas y el número de personas. Vitrina Sur revisa la disponibilidad y te entrega el contacto del propietario, con quien haces directamente los trámites y el arriendo.</p>
+          <p class="who">Vitrina Sur <span>+56 9 8920 9292</span></p>
+        </div>
+        <a class="btn wa" id="mainWa" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Casa Coinco · Vitrina Sur · Arriendos vacacionales</span>
+    <span>Fotografías proporcionadas por el propietario.</span>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Fotografía ampliada">
+  <button class="x" id="lbX" aria-label="Cerrar">×</button>
+  <button class="pv" id="lbP" aria-label="Anterior">‹</button>
+  <div class="lb-in"><img id="lbImg" alt=""><p id="lbCap"></p></div>
+  <button class="nx" id="lbN" aria-label="Siguiente">›</button>
+</div>
+
+<script>
+(function(){
+  var CFG={phone:'56989209292',price:380000,first:4,last:28,year:2027,min:7};
+  var MES='enero', DOW=['lun','mar','mié','jue','vie','sáb','dom'];
+  function clp(n){return '$'+String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'.');}
+  function wa(text){return 'https://wa.me/'+CFG.phone+'?text='+encodeURIComponent(text);}
+  var GENERIC='Hola Vitrina Sur, me interesa Casa Coinco (arriendos vacacionales). Quiero consultar disponibilidad en enero de '+CFG.year+'.';
+  document.querySelectorAll('a.wa').forEach(function(a){a.href=wa(GENERIC);a.target='_blank';a.rel='noopener';});
+
+  /* ---- Locales de Molco: completar/editar aquí. Solo se muestran datos confirmados. ---- */
+  var LOCALES=[
+    {tag:'Frutas y verduras',name:'Verdulería Molco',where:'Playa Linda, Molco',lines:['Frutas y verduras frescas del sector.','Pedidos por WhatsApp Business.'],confirmar:true},
+    {tag:'Supermercado',name:'Supermercado Lelipillán',where:'Sector Molco',lines:['Abarrotes y compras del día.'],confirmar:true},
+    {tag:'Supermercado',name:'Supermercado La Sureña',where:'Sector Molco',lines:['Abarrotes y compras del día.'],confirmar:true},
+    {tag:'Farmacia',name:'Farmacia Molco',where:'Sector Molco',lines:['Farmacia del sector.'],confirmar:true},
+    {tag:'Café',name:'Café Molco',where:'Sector Molco',lines:['Café y pausa en el camino.'],confirmar:true},
+    {tag:'Café',name:'Café El Embrujo',where:'Sector Molco',lines:['Café y pausa en el camino.'],confirmar:true},
+    {tag:'Restaurante',name:'Nuevo Restaurant',where:'Sector Molco',lines:['Restaurante del sector.'],confirmar:true},
+    {tag:'Hotel',name:'Park Lake Hotel',where:'Camino Villarrica–Pucón',lines:['Hotel a orillas del lago.'],confirmar:true}
+  ];
+  var lc=document.getElementById('locales');
+  LOCALES.forEach(function(l){
+    var c=document.createElement('div');c.className='card';
+    var s='<span class="tag">'+l.tag+'</span><h3>'+l.name+'</h3><ul>';
+    s+='<li><b>Dónde:</b> '+l.where+'</li>';
+    l.lines.forEach(function(x){s+='<li>'+x+'</li>';});
+    s+='</ul>';
+    if(l.confirmar)s+='<p class="small">Confirma horarios antes de ir.</p>';
+    c.innerHTML=s;lc.appendChild(c);
+  });
+  document.getElementById('localesNote').textContent='Estamos sumando más locales del sector. Si necesitas algo en particular, pregúntanos por WhatsApp.';
+
+  /* ---- Entrega de la casa: completar los valores; lo vacío aparece como "Se informa al confirmar". ---- */
+  var ENTREGA=[
+    ['Llegada (check-in)','A las 15:00 hrs. La primera llegada posible es el 4 de enero.'],
+    ['Salida (check-out)','A las 11:00 hrs. Con la última noche del 28, la salida más tardía es el 29 de enero.'],
+    ['Cómo llegar y acceso al condominio','Las llaves se entregan previa reunión con el propietario o con personal de Vitrina Sur.'],
+    ['Estacionamiento','Para 4 vehículos, al interior del condominio.'],
+    ['Grupo electrógeno y corte de luz','Si hay corte de luz, se entrega un video que explica cómo usar el grupo electrógeno.'],
+    ['Leña y calefacción','Leña y calefacción disponibles para los días de lluvia.'],
+    ['Kayaks y acceso al lago','2 kayaks, guardados en la misma casa, que se pueden bajar en vehículo hasta la playa.'],
+    ['Quincho y parrillas','Parrilla a gas con ventilador que ayuda a circular el aire dentro del quincho.'],
+    ['Basura y reciclaje','Retiro en la propiedad los lunes, miércoles y viernes.'],
+    ['Wi-Fi','Lo informa el propietario al momento de la llegada.'],
+    ['Normas de la casa','Las informa el propietario.'],
+    ['Contacto en caso de urgencia','Vitrina Sur · +56 9 8920 9292']
+  ];
+  var dl=document.getElementById('deliver');
+  ENTREGA.forEach(function(e){
+    var d=document.createElement('div');
+    var t=document.createElement('dt');t.textContent=e[0];
+    var v=document.createElement('dd');
+    if(e[1]){v.textContent=e[1];}else{v.textContent='Lo informa el propietario al confirmar.';v.className='pending';}
+    d.appendChild(t);d.appendChild(v);dl.appendChild(d);
+  });
+
+  /* ---- Galería ---- */
+  var PHOTOS=[
+    ['fachada','Fachada y jardín exterior','Exterior'],
+    ['portada','Terraza y jardín','Exterior'],
+    ['acceso','Acceso y estacionamiento techado','Exterior'],
+    ['porche','Porche de entrada','Exterior'],
+    ['living','Living y comedor','Living y comedor'],
+    ['comedor','Comedor','Living y comedor'],
+    ['living-comedor','Vista del living al comedor','Living y comedor'],
+    ['estar','Sala de estar con televisor','Living y comedor'],
+    ['estar-vista','Vista del área de estar','Living y comedor'],
+    ['estar-bosca','Sala de estar con bosca a leña','Living y comedor'],
+    ['cocina','Cocina y barra','Cocina'],
+    ['cocina-refri','Refrigerador, lavavajillas y almacenamiento','Cocina'],
+    ['dorm-principal','Dormitorio principal en suite · vista al lago','Dormitorios'],
+    ['dorm-lago','Dormitorio con vista al lago','Dormitorios'],
+    ['dorm-jardin','Dormitorio con vista al jardín','Dormitorios'],
+    ['dorm-reja','Dormitorio','Dormitorios'],
+    ['terraza','Terraza cubierta','Terraza'],
+    ['terraza-mesa','Mesa y bancas de la terraza','Terraza'],
+    ['terraza-vista','Vista al lago y cordillera','Terraza'],
+    ['playa-muelle','Playa y muelle','Lago'],
+    ['orilla','Orilla y actividades en el lago','Lago'],
+    ['muelle-atardecer','Muelle al atardecer','Lago']
+  ];
+  var cats=['Todas'].concat(PHOTOS.reduce(function(a,p){if(a.indexOf(p[2])<0)a.push(p[2]);return a;},[]));
+  var current='Todas', visible=[], idx=0;
+  var grid=document.getElementById('grid'), filters=document.getElementById('filters');
+  function renderFilters(){
+    filters.innerHTML='';
+    cats.forEach(function(c){
+      var b=document.createElement('button');b.type='button';b.textContent=c;
+      b.setAttribute('aria-pressed',c===current?'true':'false');
+      b.addEventListener('click',function(){current=c;renderFilters();renderGrid();});
+      filters.appendChild(b);
+    });
+  }
+  function renderGrid(){
+    visible=PHOTOS.filter(function(p){return current==='Todas'||p[2]===current;});
+    grid.innerHTML='';
+    visible.forEach(function(p,i){
+      var f=document.createElement('figure');
+      var b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Ampliar: '+p[1]);
+      var w=document.createElement('div');w.className='im';
+      var im=document.createElement('img');im.src='img/'+p[0]+'.jpg';im.alt=p[1];im.loading=i<6?'eager':'lazy';
+      w.appendChild(im);b.appendChild(w);
+      var c=document.createElement('figcaption');c.textContent=p[1];
+      b.appendChild(c);f.appendChild(b);grid.appendChild(f);
+      b.addEventListener('click',function(){open(i);});
+    });
+  }
+  var lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+  function show(){var p=visible[idx];lbImg.src='img/'+p[0]+'.jpg';lbImg.alt=p[1];lbCap.textContent=p[1];}
+  function open(i){idx=i;show();lb.classList.add('open');document.getElementById('lbX').focus();}
+  function close(){lb.classList.remove('open');}
+  function step(d){idx=(idx+d+visible.length)%visible.length;show();}
+  document.getElementById('lbX').onclick=close;
+  document.getElementById('lbP').onclick=function(){step(-1);};
+  document.getElementById('lbN').onclick=function(){step(1);};
+  lb.addEventListener('click',function(e){if(e.target===lb)close();});
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open'))return;
+    if(e.key==='Escape')close();
+    if(e.key==='ArrowLeft')step(-1);
+    if(e.key==='ArrowRight')step(1);
+  });
+  renderFilters();renderGrid();
+
+  /* ---- Plano y render: aparece solo si existen img/plano.jpg o img/render.jpg ---- */
+  [['plano','Plano de la casa'],['render','Render de la casa']].forEach(function(p){
+    var t=new Image();
+    t.onload=function(){
+      var f=document.createElement('figure');
+      var im=document.createElement('img');im.src='img/'+p[0]+'.jpg';im.alt=p[1];
+      var c=document.createElement('figcaption');c.textContent=p[1];
+      f.appendChild(im);f.appendChild(c);
+      document.getElementById('plans').appendChild(f);
+      document.getElementById('plano').hidden=false;
+      document.getElementById('navPlano').hidden=false;
+    };
+    t.src='img/'+p[0]+'.jpg';
+  });
+
+  /* ---- Calendario: noches del 4 al 28; el 29 solo como día de salida ---- */
+  var days=document.getElementById('days');
+  var start=null,end=null,DEP=CFG.last+1,tooShort=false;
+  var firstIdx=(new Date(CFG.year,0,1).getDay()+6)%7;
+  var total=new Date(CFG.year,1,0).getDate();
+  function dowOf(d){return DOW[(new Date(CFG.year,0,d).getDay()+6)%7];}
+  function renderDays(){
+    days.innerHTML='';
+    for(var b=0;b<firstIdx;b++){days.appendChild(document.createElement('span'));}
+    for(var d=1;d<=total;d++){
+      if(d<CFG.first||d>DEP){var s=document.createElement('span');s.textContent=d;days.appendChild(s);continue;}
+      var btn=document.createElement('button');btn.type='button';btn.textContent=d;
+      btn.setAttribute('aria-label',dowOf(d)+' '+d+' de '+MES+(d===DEP?' (solo salida)':''));
+      if(d===start||d===end)btn.className='ed';
+      else if(start&&end&&d>start&&d<end)btn.className='rg';
+      else if(d===DEP)btn.className='dep';
+      (function(day){btn.addEventListener('click',function(){pick(day);});})(d);
+      days.appendChild(btn);
+    }
+  }
+  function pick(d){
+    tooShort=false;
+    if(start!==null&&end===null&&d>start&&d-start<CFG.min){tooShort=true;renderDays();summary();return;}
+    if(start===null||end!==null){
+      if(d===DEP){return;}
+      start=d;end=null;
+    }else if(d>start){end=d;}
+    else{if(d===DEP)return;start=d;end=null;}
+    renderDays();summary();
+  }
+  function summary(){
+    var t=document.getElementById('sumText'),tot=document.getElementById('sumTotal'),btn=document.getElementById('sumBtn');
+    if(start&&end){
+      var n=end-start,v=n*CFG.price;
+      t.textContent='Llegada '+dowOf(start)+' '+start+' · salida '+dowOf(end)+' '+end+' de '+MES+' · '+n+(n===1?' noche':' noches');
+      tot.textContent=clp(v);
+      var msg='Hola Vitrina Sur, me interesa Casa Coinco (arriendos vacacionales). Quiero arrendarla desde el '+start+' al '+end+' de enero de '+CFG.year+' ('+n+(n===1?' noche':' noches')+', valor referencial '+clp(v)+'). ¿Está disponible?';
+      btn.href=wa(msg);btn.target='_blank';btn.rel='noopener';
+    }else if(start){
+      t.textContent=(tooShort?'El arriendo es de mínimo 1 semana (7 noches). ':'')+'Llegada el '+dowOf(start)+' '+start+' de '+MES+'. Elige una salida desde el '+(start+CFG.min)+'.';
+      tot.textContent='';
+    }else{
+      t.textContent='Elige el día de llegada. La estadía mínima es de 7 noches, que equivalen a '+clp(7*CFG.price)+'.';
+      tot.textContent='';
+    }
+    if(!(start&&end)){btn.href=wa(GENERIC);btn.target='_blank';btn.rel='noopener';}
+  }
+  renderDays();summary();
+})();
+</script>
+</body>
+</html>
